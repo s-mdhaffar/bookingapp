@@ -5,8 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon index.js"
-  },
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js --ignore client",
+    "go":"concurrently \"npm start\" \"cd .. && cd client && npm start\""  },
   "keywords": [],
   "author": "",
   "license": "ISC",
